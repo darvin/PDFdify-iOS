@@ -15,6 +15,9 @@
 		578894DE1BE199790080024F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 578894DC1BE199790080024F /* LaunchScreen.storyboard */; };
 		578894E91BE199790080024F /* PDFdifyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 578894E81BE199790080024F /* PDFdifyTests.m */; };
 		578894F41BE199790080024F /* PDFdifyUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 578894F31BE199790080024F /* PDFdifyUITests.m */; };
+		578895091BE1999D0080024F /* ShareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 578895081BE1999D0080024F /* ShareViewController.m */; };
+		5788950C1BE1999D0080024F /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5788950A1BE1999D0080024F /* MainInterface.storyboard */; };
+		578895101BE1999D0080024F /* Share.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 578895051BE1999D0080024F /* Share.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,7 +35,28 @@
 			remoteGlobalIDString = 578894CA1BE199790080024F;
 			remoteInfo = PDFdify;
 		};
+		5788950E1BE1999D0080024F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 578894C31BE199790080024F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 578895041BE1999D0080024F;
+			remoteInfo = Share;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		578895141BE1999D0080024F /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				578895101BE1999D0080024F /* Share.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		578894CB1BE199790080024F /* PDFdify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PDFdify.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -51,6 +75,11 @@
 		578894EF1BE199790080024F /* PDFdifyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PDFdifyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		578894F31BE199790080024F /* PDFdifyUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PDFdifyUITests.m; sourceTree = "<group>"; };
 		578894F51BE199790080024F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		578895051BE1999D0080024F /* Share.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Share.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		578895071BE1999D0080024F /* ShareViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShareViewController.h; sourceTree = "<group>"; };
+		578895081BE1999D0080024F /* ShareViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShareViewController.m; sourceTree = "<group>"; };
+		5788950B1BE1999D0080024F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		5788950D1BE1999D0080024F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +104,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		578895021BE1999D0080024F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -84,6 +120,7 @@
 				578894CD1BE199790080024F /* PDFdify */,
 				578894E71BE199790080024F /* PDFdifyTests */,
 				578894F21BE199790080024F /* PDFdifyUITests */,
+				578895061BE1999D0080024F /* Share */,
 				578894CC1BE199790080024F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -94,6 +131,7 @@
 				578894CB1BE199790080024F /* PDFdify.app */,
 				578894E41BE199790080024F /* PDFdifyTests.xctest */,
 				578894EF1BE199790080024F /* PDFdifyUITests.xctest */,
+				578895051BE1999D0080024F /* Share.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -140,6 +178,17 @@
 			path = PDFdifyUITests;
 			sourceTree = "<group>";
 		};
+		578895061BE1999D0080024F /* Share */ = {
+			isa = PBXGroup;
+			children = (
+				578895071BE1999D0080024F /* ShareViewController.h */,
+				578895081BE1999D0080024F /* ShareViewController.m */,
+				5788950A1BE1999D0080024F /* MainInterface.storyboard */,
+				5788950D1BE1999D0080024F /* Info.plist */,
+			);
+			path = Share;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -150,10 +199,12 @@
 				578894C71BE199790080024F /* Sources */,
 				578894C81BE199790080024F /* Frameworks */,
 				578894C91BE199790080024F /* Resources */,
+				578895141BE1999D0080024F /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				5788950F1BE1999D0080024F /* PBXTargetDependency */,
 			);
 			name = PDFdify;
 			productName = PDFdify;
@@ -196,6 +247,23 @@
 			productReference = 578894EF1BE199790080024F /* PDFdifyUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		578895041BE1999D0080024F /* Share */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 578895111BE1999D0080024F /* Build configuration list for PBXNativeTarget "Share" */;
+			buildPhases = (
+				578895011BE1999D0080024F /* Sources */,
+				578895021BE1999D0080024F /* Frameworks */,
+				578895031BE1999D0080024F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Share;
+			productName = Share;
+			productReference = 578895051BE1999D0080024F /* Share.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -216,6 +284,9 @@
 						CreatedOnToolsVersion = 7.1;
 						TestTargetID = 578894CA1BE199790080024F;
 					};
+					578895041BE1999D0080024F = {
+						CreatedOnToolsVersion = 7.1;
+					};
 				};
 			};
 			buildConfigurationList = 578894C61BE199790080024F /* Build configuration list for PBXProject "PDFdify" */;
@@ -234,6 +305,7 @@
 				578894CA1BE199790080024F /* PDFdify */,
 				578894E31BE199790080024F /* PDFdifyTests */,
 				578894EE1BE199790080024F /* PDFdifyUITests */,
+				578895041BE1999D0080024F /* Share */,
 			);
 		};
 /* End PBXProject section */
@@ -260,6 +332,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		578895031BE1999D0080024F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5788950C1BE1999D0080024F /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,6 +372,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		578895011BE1999D0080024F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				578895091BE1999D0080024F /* ShareViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -304,6 +392,11 @@
 			isa = PBXTargetDependency;
 			target = 578894CA1BE199790080024F /* PDFdify */;
 			targetProxy = 578894F01BE199790080024F /* PBXContainerItemProxy */;
+		};
+		5788950F1BE1999D0080024F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 578895041BE1999D0080024F /* Share */;
+			targetProxy = 5788950E1BE1999D0080024F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -322,6 +415,14 @@
 				578894DD1BE199790080024F /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		5788950A1BE1999D0080024F /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5788950B1BE1999D0080024F /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -479,6 +580,28 @@
 			};
 			name = Release;
 		};
+		578895121BE1999D0080024F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = Share/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.darvin.PDFdify.Share;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		578895131BE1999D0080024F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = Share/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.darvin.PDFdify.Share;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -512,6 +635,14 @@
 			buildConfigurations = (
 				578894FF1BE199790080024F /* Debug */,
 				578895001BE199790080024F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		578895111BE1999D0080024F /* Build configuration list for PBXNativeTarget "Share" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				578895121BE1999D0080024F /* Debug */,
+				578895131BE1999D0080024F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
