@@ -18,6 +18,13 @@
 		578895091BE1999D0080024F /* ShareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 578895081BE1999D0080024F /* ShareViewController.m */; };
 		5788950C1BE1999D0080024F /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5788950A1BE1999D0080024F /* MainInterface.storyboard */; };
 		578895101BE1999D0080024F /* Share.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 578895051BE1999D0080024F /* Share.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		578CFD1A1BE1F820003FB4B0 /* PDFdifyFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 578CFD191BE1F820003FB4B0 /* PDFdifyFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		578CFD211BE1F820003FB4B0 /* PDFdifyFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 578CFD171BE1F820003FB4B0 /* PDFdifyFramework.framework */; };
+		578CFD281BE1F820003FB4B0 /* PDFdifyFrameworkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 578CFD271BE1F820003FB4B0 /* PDFdifyFrameworkTests.m */; };
+		578CFD2C1BE1F820003FB4B0 /* PDFdifyFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 578CFD171BE1F820003FB4B0 /* PDFdifyFramework.framework */; };
+		578CFD2D1BE1F820003FB4B0 /* PDFdifyFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 578CFD171BE1F820003FB4B0 /* PDFdifyFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		578CFD371BE1F84B003FB4B0 /* PDFdify.h in Headers */ = {isa = PBXBuildFile; fileRef = 578CFD351BE1F84B003FB4B0 /* PDFdify.h */; };
+		578CFD381BE1F84B003FB4B0 /* PDFdify.m in Sources */ = {isa = PBXBuildFile; fileRef = 578CFD361BE1F84B003FB4B0 /* PDFdify.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +49,27 @@
 			remoteGlobalIDString = 578895041BE1999D0080024F;
 			remoteInfo = Share;
 		};
+		578CFD221BE1F820003FB4B0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 578894C31BE199790080024F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 578CFD161BE1F820003FB4B0;
+			remoteInfo = PDFdifyFramework;
+		};
+		578CFD241BE1F820003FB4B0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 578894C31BE199790080024F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 578894CA1BE199790080024F;
+			remoteInfo = PDFdify;
+		};
+		578CFD2A1BE1F820003FB4B0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 578894C31BE199790080024F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 578CFD161BE1F820003FB4B0;
+			remoteInfo = PDFdifyFramework;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -54,6 +82,17 @@
 				578895101BE1999D0080024F /* Share.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		578CFD331BE1F820003FB4B0 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				578CFD2D1BE1F820003FB4B0 /* PDFdifyFramework.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -80,6 +119,14 @@
 		578895081BE1999D0080024F /* ShareViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShareViewController.m; sourceTree = "<group>"; };
 		5788950B1BE1999D0080024F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		5788950D1BE1999D0080024F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		578CFD171BE1F820003FB4B0 /* PDFdifyFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PDFdifyFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		578CFD191BE1F820003FB4B0 /* PDFdifyFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PDFdifyFramework.h; sourceTree = "<group>"; };
+		578CFD1B1BE1F820003FB4B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		578CFD201BE1F820003FB4B0 /* PDFdifyFrameworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PDFdifyFrameworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		578CFD271BE1F820003FB4B0 /* PDFdifyFrameworkTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PDFdifyFrameworkTests.m; sourceTree = "<group>"; };
+		578CFD291BE1F820003FB4B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		578CFD351BE1F84B003FB4B0 /* PDFdify.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDFdify.h; sourceTree = "<group>"; };
+		578CFD361BE1F84B003FB4B0 /* PDFdify.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDFdify.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +134,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				578CFD2C1BE1F820003FB4B0 /* PDFdifyFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -111,6 +159,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		578CFD131BE1F820003FB4B0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		578CFD1D1BE1F820003FB4B0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				578CFD211BE1F820003FB4B0 /* PDFdifyFramework.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -121,6 +184,8 @@
 				578894E71BE199790080024F /* PDFdifyTests */,
 				578894F21BE199790080024F /* PDFdifyUITests */,
 				578895061BE1999D0080024F /* Share */,
+				578CFD181BE1F820003FB4B0 /* PDFdifyFramework */,
+				578CFD261BE1F820003FB4B0 /* PDFdifyFrameworkTests */,
 				578894CC1BE199790080024F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -132,6 +197,8 @@
 				578894E41BE199790080024F /* PDFdifyTests.xctest */,
 				578894EF1BE199790080024F /* PDFdifyUITests.xctest */,
 				578895051BE1999D0080024F /* Share.appex */,
+				578CFD171BE1F820003FB4B0 /* PDFdifyFramework.framework */,
+				578CFD201BE1F820003FB4B0 /* PDFdifyFrameworkTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -189,7 +256,39 @@
 			path = Share;
 			sourceTree = "<group>";
 		};
+		578CFD181BE1F820003FB4B0 /* PDFdifyFramework */ = {
+			isa = PBXGroup;
+			children = (
+				578CFD191BE1F820003FB4B0 /* PDFdifyFramework.h */,
+				578CFD1B1BE1F820003FB4B0 /* Info.plist */,
+				578CFD351BE1F84B003FB4B0 /* PDFdify.h */,
+				578CFD361BE1F84B003FB4B0 /* PDFdify.m */,
+			);
+			path = PDFdifyFramework;
+			sourceTree = "<group>";
+		};
+		578CFD261BE1F820003FB4B0 /* PDFdifyFrameworkTests */ = {
+			isa = PBXGroup;
+			children = (
+				578CFD271BE1F820003FB4B0 /* PDFdifyFrameworkTests.m */,
+				578CFD291BE1F820003FB4B0 /* Info.plist */,
+			);
+			path = PDFdifyFrameworkTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		578CFD141BE1F820003FB4B0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				578CFD1A1BE1F820003FB4B0 /* PDFdifyFramework.h in Headers */,
+				578CFD371BE1F84B003FB4B0 /* PDFdify.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		578894CA1BE199790080024F /* PDFdify */ = {
@@ -200,11 +299,13 @@
 				578894C81BE199790080024F /* Frameworks */,
 				578894C91BE199790080024F /* Resources */,
 				578895141BE1999D0080024F /* Embed App Extensions */,
+				578CFD331BE1F820003FB4B0 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				5788950F1BE1999D0080024F /* PBXTargetDependency */,
+				578CFD2B1BE1F820003FB4B0 /* PBXTargetDependency */,
 			);
 			name = PDFdify;
 			productName = PDFdify;
@@ -264,6 +365,43 @@
 			productReference = 578895051BE1999D0080024F /* Share.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
+		578CFD161BE1F820003FB4B0 /* PDFdifyFramework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 578CFD321BE1F820003FB4B0 /* Build configuration list for PBXNativeTarget "PDFdifyFramework" */;
+			buildPhases = (
+				578CFD121BE1F820003FB4B0 /* Sources */,
+				578CFD131BE1F820003FB4B0 /* Frameworks */,
+				578CFD141BE1F820003FB4B0 /* Headers */,
+				578CFD151BE1F820003FB4B0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PDFdifyFramework;
+			productName = PDFdifyFramework;
+			productReference = 578CFD171BE1F820003FB4B0 /* PDFdifyFramework.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		578CFD1F1BE1F820003FB4B0 /* PDFdifyFrameworkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 578CFD341BE1F820003FB4B0 /* Build configuration list for PBXNativeTarget "PDFdifyFrameworkTests" */;
+			buildPhases = (
+				578CFD1C1BE1F820003FB4B0 /* Sources */,
+				578CFD1D1BE1F820003FB4B0 /* Frameworks */,
+				578CFD1E1BE1F820003FB4B0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				578CFD231BE1F820003FB4B0 /* PBXTargetDependency */,
+				578CFD251BE1F820003FB4B0 /* PBXTargetDependency */,
+			);
+			name = PDFdifyFrameworkTests;
+			productName = PDFdifyFrameworkTests;
+			productReference = 578CFD201BE1F820003FB4B0 /* PDFdifyFrameworkTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -287,6 +425,13 @@
 					578895041BE1999D0080024F = {
 						CreatedOnToolsVersion = 7.1;
 					};
+					578CFD161BE1F820003FB4B0 = {
+						CreatedOnToolsVersion = 7.1;
+					};
+					578CFD1F1BE1F820003FB4B0 = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = 578894CA1BE199790080024F;
+					};
 				};
 			};
 			buildConfigurationList = 578894C61BE199790080024F /* Build configuration list for PBXProject "PDFdify" */;
@@ -306,6 +451,8 @@
 				578894E31BE199790080024F /* PDFdifyTests */,
 				578894EE1BE199790080024F /* PDFdifyUITests */,
 				578895041BE1999D0080024F /* Share */,
+				578CFD161BE1F820003FB4B0 /* PDFdifyFramework */,
+				578CFD1F1BE1F820003FB4B0 /* PDFdifyFrameworkTests */,
 			);
 		};
 /* End PBXProject section */
@@ -340,6 +487,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				5788950C1BE1999D0080024F /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		578CFD151BE1F820003FB4B0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		578CFD1E1BE1F820003FB4B0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -380,6 +541,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		578CFD121BE1F820003FB4B0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				578CFD381BE1F84B003FB4B0 /* PDFdify.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		578CFD1C1BE1F820003FB4B0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				578CFD281BE1F820003FB4B0 /* PDFdifyFrameworkTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -397,6 +574,21 @@
 			isa = PBXTargetDependency;
 			target = 578895041BE1999D0080024F /* Share */;
 			targetProxy = 5788950E1BE1999D0080024F /* PBXContainerItemProxy */;
+		};
+		578CFD231BE1F820003FB4B0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 578CFD161BE1F820003FB4B0 /* PDFdifyFramework */;
+			targetProxy = 578CFD221BE1F820003FB4B0 /* PBXContainerItemProxy */;
+		};
+		578CFD251BE1F820003FB4B0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 578894CA1BE199790080024F /* PDFdify */;
+			targetProxy = 578CFD241BE1F820003FB4B0 /* PBXContainerItemProxy */;
+		};
+		578CFD2B1BE1F820003FB4B0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 578CFD161BE1F820003FB4B0 /* PDFdifyFramework */;
+			targetProxy = 578CFD2A1BE1F820003FB4B0 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -602,6 +794,66 @@
 			};
 			name = Release;
 		};
+		578CFD2E1BE1F820003FB4B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = PDFdifyFramework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.darvin.PDFdifyFramework;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		578CFD2F1BE1F820003FB4B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = PDFdifyFramework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.darvin.PDFdifyFramework;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		578CFD301BE1F820003FB4B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = PDFdifyFrameworkTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.darvin.PDFdifyFrameworkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PDFdify.app/PDFdify";
+			};
+			name = Debug;
+		};
+		578CFD311BE1F820003FB4B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = PDFdifyFrameworkTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.darvin.PDFdifyFrameworkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PDFdify.app/PDFdify";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -621,6 +873,7 @@
 				578894FA1BE199790080024F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		578894FB1BE199790080024F /* Build configuration list for PBXNativeTarget "PDFdifyTests" */ = {
 			isa = XCConfigurationList;
@@ -629,6 +882,7 @@
 				578894FD1BE199790080024F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		578894FE1BE199790080024F /* Build configuration list for PBXNativeTarget "PDFdifyUITests" */ = {
 			isa = XCConfigurationList;
@@ -637,12 +891,30 @@
 				578895001BE199790080024F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		578895111BE1999D0080024F /* Build configuration list for PBXNativeTarget "Share" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				578895121BE1999D0080024F /* Debug */,
 				578895131BE1999D0080024F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		578CFD321BE1F820003FB4B0 /* Build configuration list for PBXNativeTarget "PDFdifyFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				578CFD2E1BE1F820003FB4B0 /* Debug */,
+				578CFD2F1BE1F820003FB4B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		578CFD341BE1F820003FB4B0 /* Build configuration list for PBXNativeTarget "PDFdifyFrameworkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				578CFD301BE1F820003FB4B0 /* Debug */,
+				578CFD311BE1F820003FB4B0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};

@@ -48,6 +48,16 @@
                ReferencedContainer = "container:PDFdify.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "578CFD1F1BE1F820003FB4B0"
+               BuildableName = "PDFdifyFrameworkTests.xctest"
+               BlueprintName = "PDFdifyFrameworkTests"
+               ReferencedContainer = "container:PDFdify.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
