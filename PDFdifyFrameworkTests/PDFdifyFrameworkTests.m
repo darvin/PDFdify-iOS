@@ -27,21 +27,25 @@
         [resultExpectation fulfill];
     }];
     
-    [self waitForExpectationsWithTimeout:2.0 handler:^(NSError * _Nullable error) {
+    [self waitForExpectationsWithTimeout:6.0 handler:^(NSError * _Nullable error) {
         XCTAssertNil(error);
     }];
 }
 
 - (void)testConvert {
-    PDFdify *pdfdify = [PDFdify pdfdifyWithOpts:@{@"onFinish":@{@"open":@(YES)}}];
+    PDFdify *pdfdify = [PDFdify pdfdifyWithOpts:@{@"onFinish":@{@"webdav":@{
+                                                                        @"username":@"somebody",
+                                                                        @"password":@"myencodedpass",
+                                                                        @"url":@"http://programming-motherfucker.com/"
+                                                                        }}}];
     XCTestExpectation *resultExpectation = [self expectationWithDescription:@"result"];
-    [pdfdify convertPageWithURL:@"http://wikipedia.org" title:@"Wikipedia" withCompletion:^(NSError *error, NSDictionary *result) {
+    [pdfdify convertPageWithURL:@"http://programming-motherfucker.com/" title:@"Programming" withCompletion:^(NSError *error, NSDictionary *result) {
         XCTAssertNil(error);
         XCTAssertNotNil(result);
         [resultExpectation fulfill];
     }];
     
-    [self waitForExpectationsWithTimeout:2.0 handler:^(NSError * _Nullable error) {
+    [self waitForExpectationsWithTimeout:60.0 handler:^(NSError * _Nullable error) {
         XCTAssertNil(error);
     }];
 
